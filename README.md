@@ -8,9 +8,7 @@ Welcome to my dotfiles repository! This repository contains my personal configur
 - [Installation](#installation)
 - [Usage](#usage)
 - [Included Configurations](#included-configurations)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
+- [Guide](#guide)
 
 ## Introduction
 
