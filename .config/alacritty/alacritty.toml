@@ -1,0 +1,14 @@
+live_config_reload = true
+
+[env]
+TERM = "alacritty"
+
+[window]
+padding.x = 4
+padding.y = 4
+opacity = 0.95
+
+startup_mode = "Fullscreen"
+
+
+
