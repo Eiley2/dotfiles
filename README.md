@@ -4,12 +4,17 @@ Welcome to my dotfiles repository! This repository contains my personal configur
 
 ## Table of Contents
 
+- [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Included Configurations](#included-configurations)
 - [Customization](#customization)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Introduction
+
+Dotfiles are configuration files for various applications and tools that customize your development environment. By version-controlling these files, you can easily set up your environment on new machines and share your configuration with others.
 
 ## Installation
 
@@ -26,32 +31,62 @@ Clone this repository to your home directory or any other directory you prefer:
 
 ```bash
 git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
-
 ```
 
-Next you can use GNU Stow to symlink the configuration files to your home directory:
+### Symlink the Dotfiles
+
+To create symlinks for the dotfiles in your home directory, use GNU Stow or your preferred method:
 
 ```bash
-sudo apt-get install stow
-
+cd ~/dotfiles
+stow -v -t ~ *
 ```
 
-### Symlink Configurations
+## Usage
 
-```bash
+After creating the symlinks, the configuration files will be in place and the corresponding applications will use them automatically. You can then start or restart the applications to apply the new configurations.
 
-cd ~/dotfiles && stow -v -t ~ *
+## Included Configurations
 
-```
+This repository includes configuration files for the following tools and applications:
 
-### Install oh-my-zsh
+- **Alacritty**: `.config/alacritty/alacritty.toml`
+- **Neovim**: `.config/nvim`
+  - `init.lua`
+  - `lazy-lock.json`
+  - `lazyvim.json`
+  - `.luarc.json`
+  - `.neoconf.json`
+  - `stylua.toml`
+  - `lua/config`
+    - `autocmds.lua`
+    - `keymaps.lua`
+    - `lazy.lua`
+    - `options.lua`
+  - `lua/plugins`
+    - `alpha-nvim.lua`
+    - `bufferline.lua`
+    - `elixir-tools.lua`
+    - `example.lua`
+    - `flash.lua`
+    - `indent-blankline.lua`
+    - `lsp-config.lua`
+    - `lualine.lua`
+    - `neotest-elixir.lua`
+    - `neo-tree.lua`
+    - `nvim-cmp.lua`
+    - `project-nvim.lua`
+    - `tailwind-sorter.lua`
+    - `telescope.lua`
+    - `themes.lua`
+    - `transparent.lua`
+    - `trouble.lua`
+    - `which-key.lua`
+- **Tmux**: `.tmux.conf`
+- **Zsh**: `.zshrc`
 
-```bash
+Feel free to explore the repository to see all included configurations.
 
-sudo apt-get install zsh
+## Guide
 
-```
-
-```
-
-```
+You can find a detailed guide on how to set up and use Stow in this video [here](https://www.youtube.com/watch?v=y6XCebnB9gs).
