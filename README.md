@@ -28,3 +28,30 @@ Clone this repository to your home directory or any other directory you prefer:
 git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
 
 ```
+
+Next you can use GNU Stow to symlink the configuration files to your home directory:
+
+```bash
+sudo apt-get install stow
+
+```
+
+### Symlink Configurations
+
+```bash
+
+cd ~/dotfiles && stow -v -t ~ *
+
+```
+
+### Install oh-my-zsh
+
+```bash
+
+sudo apt-get install zsh
+
+```
+
+```
+
+```
