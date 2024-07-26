@@ -82,4 +82,16 @@ return {
       })
     end,
   },
+  { "rose-pine/neovim", name = "rose-pine" },
+  { "kartikp10/noctis.nvim", dependencies = { "rktjmp/lush.nvim" } },
+  { "catppuccin/nvim", name = "catppuccin" },
+  { "rebelot/kanagawa.nvim" },
+  -- {
+  --   "navarasu/onedark.nvim",
+  --   config = function()
+  --     require("onedark").setup({
+  --       style = "cool",
+  --     })
+  --   end,
+  -- },
 }
