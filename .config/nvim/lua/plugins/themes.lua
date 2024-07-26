@@ -82,6 +82,7 @@ return {
       })
     end,
   },
+  { "Mofiqul/dracula.nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
   { "kartikp10/noctis.nvim", dependencies = { "rktjmp/lush.nvim" } },
   { "catppuccin/nvim", name = "catppuccin" },
