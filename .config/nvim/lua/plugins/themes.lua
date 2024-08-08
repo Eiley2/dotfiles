@@ -87,12 +87,20 @@ return {
   { "kartikp10/noctis.nvim", dependencies = { "rktjmp/lush.nvim" } },
   { "catppuccin/nvim", name = "catppuccin" },
   { "rebelot/kanagawa.nvim" },
-  -- {
-  --   "navarasu/onedark.nvim",
-  --   config = function()
-  --     require("onedark").setup({
-  --       style = "cool",
-  --     })
-  --   end,
-  -- },
+  {
+    "dikiaap/minimalist",
+    name = "minimalist",
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    opts = {
+      on_colors = function(colors)
+        colors.bg = "#16181a"
+      end,
+      on_highlights = function(highlights, colors)
+        highlights.LspInlayHint = { fg = colors.dark3, bg = colors.bg }
+      end,
+    },
+  },
 }
